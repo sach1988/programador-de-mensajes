@@ -71,6 +71,9 @@
   .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   @media (max-width: 760px) { .dos { grid-template-columns: 1fr; } }
   .dos ol { margin: 8px 0 0; padding-left: 20px; color: var(--muted); font-size: 15.5px; }
+  .fig { margin: 0; }
+  .fig figcaption { margin-top: 10px; color: var(--muted); font-size: 15px; }
+  .fig figcaption b { color: var(--text); }
   .aviso { background: var(--warn-bg); color: var(--warn); border-radius: 12px; padding: 14px 16px; font-size: 15px; margin-top: 18px; }
   details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; }
   summary { cursor: pointer; font-weight: 600; }
@@ -86,6 +89,7 @@
     <strong>Programador de Mensajes</strong>
     <nav>
       <a href="#funciones">Funciones</a>
+      <a href="#contactos">Contactos</a>
       <a href="#instalar">Instalar</a>
       <a href="#preguntas">Preguntas</a>
     </nav>
@@ -117,12 +121,30 @@
         <div class="card"><div class="ico">🔁</div><h3>Mensajes que se repiten</h3><p>Cada día, semana, mes o año: ideal para cumpleaños y recordatorios. La serie sigue sola.</p></div>
         <div class="card"><div class="ico">📝</div><h3>Plantillas</h3><p>Guarda los textos que repites y úsalos con un clic.</p></div>
         <div class="card"><div class="ico">📎</div><h3>Fotos y archivos</h3><p>Adjunta una imagen o un documento (hasta 15 MB); el texto va como pie.</p></div>
-        <div class="card"><div class="ico">⭐</div><h3>Favoritos y alias</h3><p>Marca tus contactos favoritos, ponles un alias a los números sin nombre y oculta los chats que no usas.</p></div>
+        <div class="card"><div class="ico">⭐</div><h3>Favoritos y alias</h3><p>Marca tus contactos favoritos y ponles un alias a los números sin nombre. Los favoritos quedan a un clic al programar.</p></div>
+        <div class="card"><div class="ico">📅</div><h3>Cuándo hablaron por última vez</h3><p>Cada contacto muestra la fecha de su último mensaje. Filtra los que llevan meses sin actividad para decidir a quién ocultar.</p></div>
+        <div class="card"><div class="ico">🏷️</div><h3>Etiquetas con color</h3><p>Familia, Trabajo, Clientes… crea las tuyas, asígnalas y filtra por ellas. Viven solo en la app: no cambian tu WhatsApp.</p></div>
+        <div class="card"><div class="ico">🧹</div><h3>Ordena tu lista en un paso</h3><p>Selecciona varios contactos y ocúltalos, muéstralos o etiquétalos de una vez. Ocultar no borra nada.</p></div>
         <div class="card"><div class="ico">🔔</div><h3>Siempre en segundo plano</h3><p>Cierra la ventana y sigue funcionando desde la bandeja. Puede iniciarse con tu computador y te avisa si algo falla.</p></div>
         <div class="card"><div class="ico">🔒</div><h3>Tus datos, en tu equipo</h3><p>No hay servidor ni cuenta. Mensajes, contactos y sesión se guardan solo en tu computador, con copia diaria automática.</p></div>
         <div class="card"><div class="ico">💬</div><h3>Contexto antes de enviar</h3><p>Mira los últimos mensajes de un chat (solo lectura) antes de programar el tuyo.</p></div>
+        <div class="card"><div class="ico">⏳</div><h3>Sabes qué está pasando</h3><p>Al vincular, una barra de progreso te muestra cómo avanza la carga de WhatsApp en vez de dejarte esperando a ciegas.</p></div>
       </div>
-      <img class="captura" style="margin-top:26px" src="assets/contactos.png" alt="Pantalla de Contactos: lista con favoritos, alias y opciones para ocultar" width="1600" height="1309">
+    </section>
+
+    <section id="contactos">
+      <h2>Pon orden en tus contactos</h2>
+      <p class="sub">Con cientos de chats, decidir cuáles ocultar o agrupar es lo más tedioso. Aquí ves la información que necesitas.</p>
+      <div class="dos">
+        <figure class="fig">
+          <img class="captura" src="assets/contactos.png" alt="Lista de contactos con fecha del último mensaje, favoritos y etiquetas de colores" width="1600" height="1304" loading="lazy">
+          <figcaption><b>Todo a la vista.</b> Fecha del último mensaje, favoritos, alias y etiquetas de colores; ordena por la última conversación.</figcaption>
+        </figure>
+        <figure class="fig">
+          <img class="captura" src="assets/limpiar.png" alt="Contactos con más de 6 meses sin mensajes, seleccionados para ocultarlos o etiquetarlos de una vez" width="1600" height="1072" loading="lazy">
+          <figcaption><b>Limpia en un paso.</b> Filtra los que llevan más de 6 meses sin actividad, selecciónalos y ocúltalos o etiquétalos juntos.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="instalar">
@@ -163,6 +185,7 @@
       <details><summary>¿Qué pasa si mi computador está apagado a la hora del mensaje?</summary><p>La app debe estar encendida para enviar. Si estuvo apagada y la hora ya pasó por más de 15 minutos, el mensaje queda como «vencido» y no sale solo: tú decides si enviarlo o borrarlo. Con «Iniciar con el sistema» arranca sola al encender el equipo.</p></details>
       <details><summary>¿Mis mensajes y contactos se suben a algún lado?</summary><p>No. Todo se guarda en tu computador. La app solo se comunica con WhatsApp, como lo hace WhatsApp Web.</p></details>
       <details><summary>¿Puede bloquearme WhatsApp la cuenta?</summary><p>Esta app usa una librería no oficial que se conecta como WhatsApp Web. Para uso personal y pocos mensajes a contactos que te conocen el riesgo es bajo, pero existe. No la uses para spam ni envíos masivos.</p></details>
+      <details><summary>¿Las etiquetas y los contactos ocultos cambian mi WhatsApp?</summary><p>No. Las etiquetas, los alias, los favoritos y los contactos ocultos existen solo dentro de la app, en tu computador. Ocultar un contacto no lo borra ni cambia tu WhatsApp: puedes volver a mostrarlo cuando quieras.</p></details>
       <details><summary>¿Necesito tener Chrome?</summary><p>Necesita Chrome o Edge. Si no encuentra ninguno, descarga Chrome una sola vez al primer arranque.</p></details>
       <details><summary>¿Cómo la desinstalo?</summary><p>En Mac, arrastra la app a la papelera. En Windows, desinstálala desde <em>Configuración → Aplicaciones</em>. Para borrar también tus datos, elimina la carpeta «Programador de Mensajes» de <code>~/Library/Application Support</code> (Mac) o <code>%APPDATA%</code> (Windows).</p></details>
     </section>

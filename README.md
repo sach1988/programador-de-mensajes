@@ -19,7 +19,8 @@ Todo queda en tu computador: sin nube, sin cuentas y sin costo.
 - **Hora en lenguaje natural:** escribe «mañana 8am», «en 2 horas» o «lunes 9:30», o elige fecha y hora en el calendario.
 - **Mensajes que se repiten:** cada día, semana, mes o año (cumpleaños, recordatorios).
 - **Plantillas** para los textos que repites y **adjuntos** (imágenes o archivos de hasta 15 MB).
-- **Favoritos, alias y ocultar** contactos; **ver los últimos mensajes** de un chat antes de programar (solo lectura).
+- **Contactos:** favoritos, alias, **fecha del último mensaje** (con filtro de inactividad), **etiquetas con color** y acciones sobre varios contactos a la vez (ocultar, mostrar, etiquetar). Todo vive solo en la app; tu WhatsApp no cambia.
+- **Ver los últimos mensajes** de un chat antes de programar (solo lectura).
 - **Segundo plano:** al cerrar la ventana sigue en la bandeja del sistema enviando tus mensajes. Puede iniciarse con el computador y te avisa si algo falla.
 - **Privado:** mensajes, contactos y sesión se guardan solo en tu equipo, con copia automática diaria.
 
