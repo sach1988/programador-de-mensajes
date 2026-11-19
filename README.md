@@ -29,8 +29,10 @@ La app **no está firmada** con un certificado de pago, por eso el sistema pide 
 
 **Mac**
 1. Abre el `.dmg` y arrastra la app a *Aplicaciones*.
-2. La primera vez: clic derecho sobre la app → **Abrir** → **Abrir**.
-3. Si dice que «está dañada»: `xattr -cr "/Applications/Programador de Mensajes.app"` en Terminal.
+2. Ábrela. macOS dirá «No se abrió…»: pulsa **Listo** (no «Mover al basurero»).
+3. Ve a **Ajustes del Sistema → Privacidad y seguridad**, baja hasta *Seguridad* y pulsa **Abrir de todos modos** junto a «Programador de Mensajes»; confirma con tu contraseña o Touch ID. Solo hace falta la primera vez.
+4. Alternativa por Terminal: `xattr -cr "/Applications/Programador de Mensajes.app"` y vuelve a abrirla.
+5. En macOS 14 o anterior basta con clic derecho sobre la app → **Abrir** → **Abrir**.
 
 **Windows**
 1. Ejecuta el instalador `.exe`.
